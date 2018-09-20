@@ -27,8 +27,8 @@
       </header>
         <h1>Database Error</h1>
         <p class="first_paragraph">There was an error connecting to the database.</p>
-        <p>The database must be installed as described in the appendix.</p>
-        <p>MySQL must be running as described in chapter 1.</p>
+        <p>We apologize for the inconvenience and will fix the issue as soon as possible</p>
+        <p>Please Try again at a later date!</p>
         <p class="last_paragraph">Error message: <?php echo $error_message; ?></p>
     </div>
     <footer>

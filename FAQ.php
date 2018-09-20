@@ -60,15 +60,15 @@
             </div>
       </div>
       <div class="faq">
-            <h2>What kind of accesibility does Carlsbad Cavern have?</h2>
+            <h2>What kind of accessibility does Carlsbad Cavern have?</h2>
             <div class="answer">
-              <p>This might actually supprise you, but there is actually an elevator for anyone Handicapped, so if you are in a wheel chair you can still see the wonders of the Caverns!!</p>
+              <p>This might actually surprise you, but there is actually an elevator for anyone Handicapped, so if you are in a wheel chair you can still see the wonders of the Caverns!!</p>
             </div>
       </div>
       <div class="faq">
             <h2>When cave spelunking should I bring a lantern of some sort or a flashlight?</h2>
             <div class="answer">
-              <p>Something that can either be attached to your write or be put in your pocket is usually best, soem of the small flashlights can actually be pretty powerful.</p>
+              <p>Something that can either be attached to your wrist or be put in your pocket is usually best, some of the small flashlights can actually be pretty powerful.</p>
             </div>
       </div>
 
