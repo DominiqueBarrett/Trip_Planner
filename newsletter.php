@@ -56,7 +56,7 @@
         firstNameValidation();
         lastNameValidation();
         emailAddressValidation();
-        if (firstNameError.innerHTML != "" || lastNameError.innerHTML != "" || emailAddress.innerHTML != "")
+        if (firstNameError.innerHTML != "" || lastNameError.innerHTML != "" || emailAddressError.innerHTML != "")
             return;
         newsletterForm.submit()
         }      

@@ -39,6 +39,7 @@
     <!-- this function validates that the email is in the correct format to be an email, it uses regular expression (something learned at work) to do so if it makes it all the way through the function it sets the error message to an empty string-->
     function emailAddressValidation() 
     {
+    debugger;
         var email = $("emailAddress").value;
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         var isValid = re.test(String(email).toLowerCase());
@@ -75,7 +76,7 @@
         lastNameValidation();
         emailAddressValidation();
         phoneNumberValidation();
-        if (firstNameError.innerHTML != "" || lastNameError.innerHTML != "" || emailAddress.innerHTML != "" || phoneNumber.innerHTML != "")
+        if (firstNameError.innerHTML != "" || lastNameError.innerHTML != "" || emailAddressError.innerHTML != "" || phoneNumberError.innerHTML != "")
             return;
         contactUsForm.submit()
     }      
