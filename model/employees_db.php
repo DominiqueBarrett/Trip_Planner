@@ -66,31 +66,33 @@ class Employee {
         $statement->execute();
         $rows = $statement->fetchAll();
         $statement->closeCursor();
-    
         
+        $visitors = [];
+        foreach ($rows as $row) {
+        $visitor = new Visitor($row['employeeID'],
+                            $row['firstName'],
+                            $row['lastName'],
+                            $row['emailAddress'],
+                            $row['phoneNumber'],
+                            $row['visitorID']);
+        $visitors[] = $visitor;
+        }
+        return $visitors;
         
-        
-        try {
-            if($visitors !== NULL) {
-                foreach ($rows as $row) {
-                $visitor = new Visitor($row['employeeID'],
-                                    $row['firstName'],
-                                    $row['lastName'],
-                                    $row['emailAddress'],
-                                    $row['phoneNumber'],
-                                    $row['visitorID']);
-                $visitors[] = $visitor;
-                }
-            }
-            else
-                  throw new Exception($visitors);
-              }
-              catch(Exception $visitors) {
-                //re-throw exception
-                  echo "This Employee is not currently helping any visitors. Please check back later";
-                throw new customException($visitors);
+        //try {
+            //if($visitors !== NULL) {
+                
+            //}
+            //else
+            //      throw new Exception($visitors);
             //  }
-            }
+            //  catch(Exception $visitors) {
+                //re-throw exception
+            //      echo "This Employee is not currently helping any visitors. Please check back later";
+            //    throw new customException($visitors);
+            //  }
+            //}
+            
         }
     }
 ?>

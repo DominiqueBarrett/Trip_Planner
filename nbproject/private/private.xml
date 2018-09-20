@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/Trip_Planner/contact_Data.php</file>
+            <file>file:/C:/xampp/htdocs/Trip_Planner/viewVisitors.php</file>
+            <file>file:/C:/xampp/htdocs/Trip_Planner/deleteVisitor.php</file>
+            <file>file:/C:/xampp/htdocs/Trip_Planner/model/employees_db.php</file>
+            <file>file:/C:/xampp/htdocs/Trip_Planner/newsletter_Data.php</file>
+            <file>file:/C:/xampp/htdocs/Trip_Planner/newsletter.php</file>
+            <file>file:/C:/xampp/htdocs/Trip_Planner/contact.php</file>
+            <file>file:/C:/xampp/htdocs/Trip_Planner/adminReport.php</file>
+        </group>
     </open-files>
 </project-private>

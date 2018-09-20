@@ -6,9 +6,14 @@ require('model/employees_db.php');
 //this gets the employeeID from the url to be used to sort visitors
 $id = $_GET['id'];    
 //this retreives the visitors from the database using the id from the url (above)
-$visitors = EmployeeDB::getVisitorsByEmployeeID($id);
+$errorMessage = NULL;
 //$visitors = VisitorDB::getVisitors();
-
+try {
+    $visitors = EmployeeDB::getVisitorsByEmployeeID($id);
+} 
+catch (Exception $ex) {
+ $errorMessage ="Cannot Connect to the Database";
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -83,10 +88,13 @@ $visitors = EmployeeDB::getVisitorsByEmployeeID($id);
                     </tr>
                 <?php endforeach; ?>
                 <tr>
-                    <td style="text-align: center" colspan="6">
+                    <td id="errorMessage" style="text-align: center; color: greenyellow;" colspan="6">
                         <?php 
-                            if ($visitors == Null){
+                            if ($visitors == Null && $errorMessage == NULL){
                                 echo "This employee is not helping anyone at the moment. Please check back again at a later date.";
+                            }
+                            else if ($errorMessage != NULL) {
+                                echo $errorMessage;
                             }
                         ?>
                     </td>

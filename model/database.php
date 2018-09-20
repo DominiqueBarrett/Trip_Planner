@@ -1,6 +1,6 @@
 <?php
 /*this calls the database trip_planner and allows us to use it as mgs_user and if there is an issue connecting to the database it will error*/
-    $dsn = 'mysql:host=localhost;dbname=trip_planner';
+    $dsn = 'mysql:host=localhost;dbname=trip_plannera';
     $username = 'mgs_user';
     $password = 'Pa$$w0rd';
 
