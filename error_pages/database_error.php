@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Tripe Planner Error</title>
+        <title>Trip Planner Error</title>
         <link href="_css/site.css" rel="stylesheet">
         <script src="_js/site.js"></script>
     </head>
@@ -29,7 +29,7 @@
         <p class="first_paragraph">There was an error connecting to the database.</p>
         <p>We apologize for the inconvenience and will fix the issue as soon as possible</p>
         <p>Please Try again at a later date!</p>
-        <p class="last_paragraph">Error message: <?php echo $error_message; ?></p>
+        
     </div>
     <footer>
       <p>Any Information is subject to personal opinions by Dominique Barrett.<img class="animated" style="width:100px;" src="_images/Airplane.png" alt="Airplane">
