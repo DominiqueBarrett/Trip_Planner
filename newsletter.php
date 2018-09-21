@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Modified Date: 9-14-2018            *
+ * Edited the validation for the newsletter   *
+ * Modified Date: 9-19-2018                        *
+ * fixed validation error handling                 *
+ *********************************************/ 
+?>
 <html>
   <head>
     <meta charset="UTF-8">

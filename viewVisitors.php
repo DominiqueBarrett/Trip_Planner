@@ -1,4 +1,11 @@
-<?php 
+<?php
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-21-2018            *
+ * Added an if statement to show an error if  *
+ * the Employee doesn't have any visitors     *
+ * assigned to them                           *
+ *********************************************/ 
 require('model/database.php');
 require('model/visitor_db.php');
 require('model/employees_db.php');
@@ -89,10 +96,10 @@ catch (Exception $ex) {
                 <?php endforeach; ?>
                 <tr>
                     <td id="errorMessage" style="text-align: center; color: greenyellow;" colspan="6">
-                        <?php 
+                        <?php //This echos an error if there are not any Visitors assigned to particular employee. 
                             if ($visitors == Null && $errorMessage == NULL){
                                 echo "This employee is not helping anyone at the moment. Please check back again at a later date.";
-                            }
+                            } //if the call to the database send back an errorMessage that is can't connect it shows that error
                             else if ($errorMessage != NULL) {
                                 echo $errorMessage;
                             }

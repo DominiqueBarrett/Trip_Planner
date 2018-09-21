@@ -1,4 +1,12 @@
 <?php
+
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-14-2018            *
+ * Added visitor delete and view by employeeID*
+ *********************************************/ 
+
+
 /*this is the function that will add the data inputed by a user to the database into the visitor table. 
  * It gets the first name, last name, email address, and phone number to insert*/
 function add_visitor($firstName, $lastName, $emailAddress, $phoneNumber) {
@@ -80,7 +88,7 @@ function add_visitor($firstName, $lastName, $emailAddress, $phoneNumber) {
         }
     }
     class VisitorDB {
-        public static function getVisitors() {
+        public static function getVisitors() { //gets all visitors from the table and orders them by employee ID
             $db = Database::getDB();
             $query = 'SELECT * FROM visitor
                       ORDER BY EmployeeID';
@@ -99,7 +107,7 @@ function add_visitor($firstName, $lastName, $emailAddress, $phoneNumber) {
             }
             return $visitors;
         }
-        public function getVisitorByID($visitorID) {
+        public function getVisitorByID($visitorID) {//this will show the visitor with a certain ID (shows information on the delete page)
             $db = Database::getDB();
 
             $query = 'SELECT * FROM visitor
@@ -121,7 +129,7 @@ function add_visitor($firstName, $lastName, $emailAddress, $phoneNumber) {
             }
             return $visitors;
         }
-        public function deleteVisitorByID($visitorID) {
+        public function deleteVisitorByID($visitorID) {//this will delete a contact from the visitor table with a certain ID
         $db = Database::getDB();
         $query = "DELETE FROM visitor
                   WHERE visitorID = '$visitorID'";

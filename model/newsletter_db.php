@@ -1,4 +1,12 @@
 <?php
+
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-14-2018            *
+ * function to add a newletter contact        *
+ *********************************************/ 
+
+
 /*this is the function that will add the data inputed by a user to the database into the newsletter table. 
  * It gets the first name, last name, and email address to insert*/
 function add_newsletter($firstName, $lastName, $emailAddress) {

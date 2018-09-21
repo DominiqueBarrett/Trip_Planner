@@ -1,5 +1,12 @@
 <!--php calls the databases files which call the database itself it post the information it gets from the Contact form it also calls the add_visitor function which will add that information to the visitor table-->
 <?php
+
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-14-2018            *
+ * Added thank you for contact sign up        *
+ *********************************************/ 
+
 require('model/database.php');
 require('model/visitor_db.php');
     // get the data from the form

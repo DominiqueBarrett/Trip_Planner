@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php 
+
+/***************************************************
+ * Modified By: Dominique Barrett                  *
+ * Modified Date: 9-14-2018                        *
+ * Added validation for the contact sign up page   *
+ * Modified Date: 9-19-2018                        *
+ * fixed validation error handling                 *
+ **************************************************/ 
+
+?>
 <html>
   <head>
     <meta charset="UTF-8">

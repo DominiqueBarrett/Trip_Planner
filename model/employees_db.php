@@ -1,4 +1,13 @@
 <?php
+
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-20-2018            *
+ * Added an empty array list so it doesn't    *
+ * error later on.                            *
+ *********************************************/ 
+
+
 class Employee {
         private $id;
         private $firstName;
@@ -33,7 +42,7 @@ class Employee {
             $this->lastName = $value;
         }
     }
-    class EmployeeDB {
+    class EmployeeDB {//selecting all the employees so they can be viewed.
     public static function getEmployees() {
         $db = Database::getDB();
         $query = 'SELECT * FROM employees
@@ -67,7 +76,7 @@ class Employee {
         $rows = $statement->fetchAll();
         $statement->closeCursor();
         
-        $visitors = [];
+        $visitors = [];//empty array is being set so if there are no visitors I can use that to error check the page it is being called from
         foreach ($rows as $row) {
         $visitor = new Visitor($row['employeeID'],
                             $row['firstName'],

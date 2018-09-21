@@ -1,4 +1,14 @@
-<html>
+<?php
+
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-20-2018            *
+ * commented out due to not using it   *
+ *********************************************/ 
+
+
+?>
+<!--<html>
     <head>
         <meta charset="UTF-8">
         <title>Trip Planner Home</title>
@@ -33,7 +43,7 @@
       </header>
     <div id="main">
         <h1 class="top">Error</h1>
-        <p><?php echo $error; ?></p>
+        <p><?php // echo $error; ?></p>
     </div>
     <footer>
       <p>Any Information is subject to personal opinions by Dominique Barrett.<img class="animated" style="width:100px;" src="../_images/Airplane.png" alt="Airplane">
@@ -41,4 +51,4 @@
         <script>printToday();</script>
       </strong> you better start planning now! And make sure to travel responsibly.</p>
     </footer>
-</html>
+</html>-->

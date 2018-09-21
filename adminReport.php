@@ -1,11 +1,15 @@
 <?php 
+
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-14-2018            *
+ * Added a foreach to show all the employees  *
+ *********************************************/ 
+
 require('model/database.php');
 require('model/visitor_db.php');
 require('model/employees_db.php');
-
-    
-    
-    
+  
 $employees = EmployeeDB::getEmployees();
 $visitors = VisitorDB::getVisitors();
 

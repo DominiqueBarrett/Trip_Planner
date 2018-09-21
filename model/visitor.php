@@ -1,5 +1,11 @@
 <?php
 
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-14-2018            *
+ *********************************************/ 
+
+
     class Visitor {
         private $employeeID;
         private $firstName;

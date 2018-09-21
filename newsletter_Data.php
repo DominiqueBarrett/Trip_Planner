@@ -1,5 +1,10 @@
 <!--php calls the databases files which call the database itself it post the information it gets from the newsletter form it also calls the add_newsletter function which will add that information to the newsletter table in the database-->
 <?php
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Latest Modified Date: 9-14-2018            *
+ * Added a thank you for contacting us page   *
+ *********************************************/ 
     require('model/database.php');
     require('model/newsletter_db.php');
     // get the data from the form

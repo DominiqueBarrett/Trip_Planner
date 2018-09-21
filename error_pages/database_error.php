@@ -1,3 +1,15 @@
+<?php
+//This file is called only if the database has failed
+/**********************************************
+ * Modified By: Dominique Barrett             *
+ * Modified Date: 9-14-2018                   *
+ * Added an error for if the database is      *
+ * unavailable                                *
+ * Modified Date: 9-14-2018                   *
+ * changed error message                      *
+ *********************************************/ 
+
+?>
 <html>
     <head>
         <meta charset="UTF-8">
